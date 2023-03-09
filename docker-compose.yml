@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  metrica:
+    image: maksspace/metrica:latest
+    env_file:
+      - ./.env
+    volumes:
+      - "/home/maks/Documents/personal-projects/metrica/backend/lowdb.json:/app/lowdb.json"
+    ports:
+      - 3000:3000
+      - 8080:8080

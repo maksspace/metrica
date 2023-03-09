@@ -1,0 +1,42 @@
+.dashboard {
+
+}
+
+.dashboard_title {
+  padding: 8px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 16px;
+  padding: 8px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 4px;
+  min-height: 360px;
+  padding: 4px;
+  max-width: 500px;
+}
+
+.metric_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 4px;
+}
+
+.metric_title {
+  padding: 4px;
+  font-weight: bold;
+}
+
+.metric_content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
